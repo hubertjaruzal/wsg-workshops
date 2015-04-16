@@ -1,5 +1,7 @@
 <ul>
   <% @messages.each do |msg| %>
-    <li><%= msg.body %></li>
+    <li><%= msg.body  %></li>
+  <p><b>Autor:</b> <%= msg.author  %></p>
+  <p><b>Data:</b> <%= msg.date  %></p>
   <% end %>
 </ul>
